@@ -27,10 +27,6 @@ img {
     margin-left: auto;
     margin-right: 0;
 }
-.other{
- border: solid 0.5px black;
-margin: 5px;
-}
 
 #upper-bar {
     display: flex;
@@ -45,6 +41,7 @@ margin: 5px;
     border-radius: 5px;
     border: solid 0.5px black;
     margin: 10px;
+    color: black;
 }
 /*
 button {
@@ -57,18 +54,61 @@ button {
     cursor: pointer;
 }
 */
-img:hover, .img:active {
-    border: solid 3px yellowgreen;
-}
-
 .container {
     width: 100%;
     height: calc(100dvh - 110px);
     margin: 0;
     justify-content: space-between;
     background-color: mintcream;
-    padding: 0 10% 0 10%; 
 }
+.pinnwand {
+      position: relative;
+}
+.note {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background-color: #fff8a5;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      transform-origin: center;
+      box-sizing: border-box;
+      margin: 10px;
+    }
+    .note:nth-child(1) {
+      top: 300px;
+      left: 300px;
+      transform: rotate(-8deg); /*funktioniert nicht Notiz 6*/
+    }
+
+    .note:nth-child(2) {
+      top: 275px;
+     left: 50px;
+      transform: rotate(-5deg); /*passt Notiz 1*/
+    }
+
+    .note:nth-child(3) {
+      top: 450px;
+      left: 50px;
+      transform: rotate(-3deg); /*passt Notiz 2*/
+    }
+
+    .note:nth-child(4) {
+      top: 150px;
+      left: 225px;
+      transform: rotate(12deg); /*passt Notiz 3*/
+    }
+
+    .note:nth-child(5) {
+      top: 475px;
+      left: 225px;
+      transform: rotate(-10deg); /*passt Notiz 4*/
+    }
+    .note:nth-child(6){
+        top: 300px;
+        left: 250px;
+        transform: rotate(15deg); /*passt Notiz 5*/
+    }
 #down {
     border: solid 0.5px black;
     margin-bottom: 3px;
