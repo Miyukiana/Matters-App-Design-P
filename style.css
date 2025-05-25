@@ -36,13 +36,18 @@ img {
     padding: 10px 20px;
 }
 
-#extra {
+.extra {
     padding: 5px;
     border-radius: 5px;
     border: solid 0.5px black;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
     color: black;
 }
+input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
 /*
 button {
     color: black;
@@ -59,56 +64,71 @@ button {
     height: calc(100dvh - 110px);
     margin: 0;
     justify-content: space-between;
-    background-color: mintcream;
+    background: linear-gradient(to top left, rgba(153, 205, 50, 0.765), mintcream);
 }
 .pinnwand {
       position: relative;
 }
 .note {
       position: absolute;
-      width: 100px;
-      height: 100px;
-      background-color: #fff8a5;
-      border: 1px solid #ccc;
+      background-color: white;
+      border: 0.5px solid black;
       box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
       transform-origin: center;
       box-sizing: border-box;
       margin: 10px;
+      padding: 10px;
     }
-    .note:nth-child(1) {
-      top: 300px;
-      left: 300px;
-      transform: rotate(-8deg); /*funktioniert nicht Notiz 6*/
+        /* erstes von oben*/
+    #one{
+      top: 120px;
+      left: 40px;
+      transform: rotate(-10deg); 
+            width: 130px;
+      height: 95px;
     }
-
-    .note:nth-child(2) {
+        /* zweites von oben */
+    #two{
+      top: 125px;
+      left: 225px;
+      transform: rotate(12deg); 
+            width: 125px;
+      height: 110px;
+    }
+        /* drittes von oben */
+    #three {
       top: 275px;
-     left: 50px;
-      transform: rotate(-5deg); /*passt Notiz 1*/
+     left: 20px;
+      transform: rotate(-5deg); 
+            width: 200px;
+      height: 90px;
     }
-
-    .note:nth-child(3) {
+    /* viertes von oben */
+     #four {                       
+      top: 300px;
+      left: 250px;
+      transform: rotate(8deg); 
+      width: 100px;
+      height: 100px;
+    }
+    /* fünftes von oben */
+    #five {
       top: 450px;
       left: 50px;
-      transform: rotate(-3deg); /*passt Notiz 2*/
+      transform: rotate(-3deg); 
+            width: 100px;
+      height: 80px;
     }
 
-    .note:nth-child(4) {
-      top: 150px;
-      left: 225px;
-      transform: rotate(12deg); /*passt Notiz 3*/
-    }
-
-    .note:nth-child(5) {
+    /* sechstes von oben */
+    #six {
       top: 475px;
       left: 225px;
-      transform: rotate(-10deg); /*passt Notiz 4*/
+      transform: rotate(-10deg); 
+            width: 120px;
+      height: 90px;
     }
-    .note:nth-child(6){
-        top: 300px;
-        left: 250px;
-        transform: rotate(15deg); /*passt Notiz 5*/
-    }
+
 #down {
     border: solid 0.5px black;
     margin-bottom: 3px;
@@ -123,4 +143,13 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px 0px 10px;
+}
+#send {
+    margin-left: 0;
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 0.5px black;
+    color: black;
+    background-color: white;
 }
